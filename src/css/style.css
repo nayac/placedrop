@@ -1,0 +1,77 @@
+body {
+  overflow: hidden; }
+
+nav a {
+  color: #fff; }
+
+nav a:hover {
+  color: #fff; }
+
+nav .dropdown .dropdown-toggle {
+  color: #fff; }
+
+nav .dropdown .dropdownstyle {
+  border-radius: 0px;
+  border: none; }
+  nav .dropdown .dropdownstyle a {
+    color: gray; }
+  nav .dropdown .dropdownstyle a:hover {
+    color: red;
+    background-color: #fff; }
+
+nav li .btn-opaque {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(255, 255, 255, 0.2) 2px solid;
+  color: #fff;
+  width: 200px;
+  height: 50px; }
+
+nav li .btn-opaque:hover {
+  border: #fff 2px solid;
+  color: #fff; }
+
+#landing {
+  background: url("../img/image1.jpg");
+  position: relative;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #landing .dark-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  #landing .index-content1 {
+    margin-top: 100px; }
+  #landing .index-form1 {
+    margin-left: 90px;
+    width: 900px; }
+    #landing .index-form1 .index-form1-input {
+      height: 50px;
+      border: none;
+      border-right: 1px solid gray; }
+    #landing .index-form1 input {
+      border-right: 1px solid gray; }
+    #landing .index-form1 .index-form1-btn {
+      border: none;
+      background-color: #fff;
+      height: 50px;
+      border-radius: 0px 5px 5px  0px; }
+    #landing .index-form1 .index-form1-btn button:hover {
+      background-color: #fff; }
+    #landing .index-form1 .index-form1-style a:hover {
+      background-color: red;
+      color: #fff; }
+  #landing .opt-row {
+    margin-top: 100px; }
+    #landing .opt-row .col {
+      background-color: rgba(255, 255, 255, 0.2);
+      max-width: 100px;
+      height: 110px;
+      margin-right: 1px;
+      border-radius: 2px;
+      width: 200px; }
+      #landing .opt-row .col p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }

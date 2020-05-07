@@ -1,0 +1,124 @@
+$darkoverlay: rgba(0,0,0,0.7);
+$transparentwhitecolor: rgba(255,255,255,0.2);
+$navtransparentwhitecolor: rgba(255,255,255,0.1);
+
+body{
+    overflow: hidden;
+}
+
+
+nav{
+    a{
+        color: #fff;
+    }
+    a:hover{
+        color:#fff;
+    }
+    .dropdown{
+        .dropdown-toggle{
+            color: #fff;
+        }
+        .dropdownstyle{
+            border-radius: 0px;
+            border: none;
+            a{
+                color: gray;
+            }
+            a:hover{
+                color: red;
+                background-color: #fff;
+            }
+        }
+    }
+    li{
+        .btn-opaque{
+            background-color:$navtransparentwhitecolor;
+            border: $transparentwhitecolor 2px solid;
+            color: #fff;
+            width: 200px;
+            height: 50px;
+            
+        }
+        .btn-opaque:hover{
+            border: #fff 2px solid;
+            color: #fff;
+        }
+    }
+}
+
+#landing{
+    background: url('../img/image1.jpg');
+    position: relative;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .dark-overlay{
+        
+        background: $darkoverlay;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+    }
+    .index-content1{
+        margin-top: 100px;
+    }
+    .index-form1{
+        
+        margin-left: 90px;
+        width: 900px;
+        .index-form1-input{
+            height: 50px;
+            border: none;
+            border-right: 1px solid gray;
+            
+            
+            }
+            input{
+                border-right: 1px solid gray;
+            }
+            
+        .index-form1-btn{
+            border: none;
+            background-color: #fff;
+            height: 50px;
+            border-radius:0px 5px 5px  0px;
+            
+        }
+        .index-form1-btn button:hover{
+            background-color: #fff;
+        }
+            
+        .index-form1-style{
+            a:hover{
+                background-color: red;
+                color: #fff;
+            }
+        
+      }
+    }
+    .opt-row{
+        margin-top: 100px;
+        .col {
+            background-color: $transparentwhitecolor;
+           max-width: 100px;
+           height: 110px;
+           margin-right: 1px;
+           border-radius: 2px;
+           width: 200px;
+           p{
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           }
+  
+  
+           
+           
+           
+
+        }
+    }
+  }
+    
