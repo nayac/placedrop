@@ -1,9 +1,11 @@
-$darkoverlay: rgba(0,0,0,0.7);
+$darkoverlay: rgba(0,0,0,0.6);
 $transparentwhitecolor: rgba(255,255,255,0.2);
 $navtransparentwhitecolor: rgba(255,255,255,0.1);
 
+
+
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -49,7 +51,7 @@ nav{
 #landing{
     background: url('../img/image1.jpg');
     position: relative;
-    min-height: 600px;
+    min-height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
     .dark-overlay{
@@ -58,8 +60,9 @@ nav{
         position: absolute;
         height: 100%;
         width: 100%;
-
+    
     }
+
     .index-content1{
         margin-top: 100px;
     }
@@ -98,7 +101,7 @@ nav{
       }
     }
     .opt-row{
-        margin-top: 100px;
+        margin-top: 130px;
         .col {
             background-color: $transparentwhitecolor;
            max-width: 100px;
@@ -121,4 +124,103 @@ nav{
         }
     }
   }
-    
+
+#highlight{
+    .highlight-row{
+        padding: 0px;
+        margin:0px;
+        
+        .dine{
+            background: url('../img/image6.jpg');
+            position: relative;
+            min-height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+
+        }
+        .drink{
+            background: url('../img/image5.jpg');
+            position: relative;
+            min-height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .stay{
+            background: url('../img/image3.jpg');
+            position: relative;
+            min-height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+        .tented{
+            background: url('../img/image4.jpg');
+            position: relative;
+            min-height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+
+        }
+        .dark-overlay-hi{
+        
+            background: $darkoverlay;
+            position: absolute;
+        
+            height: 100%;
+            width: 100%;
+        
+        }
+        
+        
+            
+        
+        .col-sm-3{
+            
+            border-radius: 5px;
+            margin: 20px;
+            max-width: 250px;
+            height: 300px;
+        }
+        
+    }
+}
+.hi-fa{
+    border: 2px solid #4c9c52;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+ 
+
+}
+
+#product1{
+    .card{
+        .color-fa{
+            color:  #4c9c52;
+        }
+    }
+}
+
+#product2{
+    .card{
+        
+        .color-fa{
+            color: #4c9c52 ;
+        }
+    }
+}
+#footer{
+    .footer-fa{
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .bg-black{
+        background-color: #3d403d;
+    }
+}
