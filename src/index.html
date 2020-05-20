@@ -48,7 +48,7 @@
                                         Help
                                     </button>
                                     <div class="dropdown-menu dropdownstyle mt-2">  
-                                        <a href="#" class="dropdown-item">How it works</a>
+                                        <a href="how_it_works.html" class="dropdown-item">How it works</a>
                                          
                                         <a href="#" class="dropdown-item">Listings-No Map</a>
                                     </div>
@@ -56,11 +56,12 @@
             
                             </li>
                             <li class="nav-item mr-3 btn ">
-                                <a href="#" class="nav-link btn btn-opaque pl-3">Add a Place <span><i class="fa fa-caret-right"></i></span> </a>
+                                <a href="add_a_place.html" class="nav-link btn btn-opaque pl-3">Add a Place <span><i class="fa fa-caret-right"></i></span> </a>
                             </li>
                                
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Log In</a>
+                            
+                                <button type="button" class="btn" style="color: #fff;" data-toggle="modal" data-target="#login" ">Log In</button>
                             </li>
                         </ul>
                         
@@ -488,6 +489,50 @@
         </div>
 
     </footer>
+
+
+    <!-- login modal -->
+   
+
+
+<div class="modal fade"  id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 400px;" role="document">
+      <div class="container-fluid">
+        <div class="modal-content">
+            <div class="container mt-4">
+              <i class="fa fa-facebook-square modal-fa ml-5" style="color:#264b96;"></i>
+              <i class="fa fa-google modal-fa" style="color: #188f18;"></i>
+              <hr class="" style="max-width: 300px;">
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group ">
+                  <label for="Username" class="col-form-label ml-3">Username or Email Address</label>
+                  <input type="text" class="form-control ml-3" id="username" style="max-width: 300px; height: 60px;">
+                </div>
+                <div class="form-group ">
+                  <label for="password" class="col-form-label ml-3">Password</label>
+                  <input type="password" class="form-control ml-3" id="password" style="max-width: 300px; height: 60px;">
+                  
+                </div>
+                
+              </form>
+            </div>
+            <div class="container">
+              
+              <button type="button" class="btn btn-danger btn-lg p-3 ml-3" style="min-width: 300px;">Login <i class="fa fa-caret-right"></i></button>
+               
+              <hr style="max-width: 300px;">
+                <p class="text-center"> dont have an account?<a href="#" class="text-danger">Sign Up</a></p>
+               
+            </div>
+          </div>
+      </div>
+    
+  </div>
+</div>
+
+
 
 
 

@@ -1,11 +1,19 @@
 body {
   overflow-x: hidden; }
 
+nav .nav-input {
+  border: none;
+  border-left: 1px solid black;
+  margin-right: 20px; }
+
 nav a {
   color: #fff; }
 
 nav a:hover {
   color: #fff; }
+
+nav .dropdown .dropdown-new {
+  color: black; }
 
 nav .dropdown .dropdown-toggle {
   color: #fff; }
@@ -29,6 +37,10 @@ nav li .btn-opaque {
 nav li .btn-opaque:hover {
   border: #fff 2px solid;
   color: #fff; }
+
+nav li .btn-opaque2 {
+  background-color: #fff;
+  border: lightgray 2px solid; }
 
 #landing {
   background: url("../img/image1.jpg");
@@ -135,3 +147,13 @@ nav li .btn-opaque:hover {
 
 #footer .bg-black {
   background-color: #3d403d; }
+
+#procedures .listing-btn {
+  border: none;
+  height: 60px;
+  max-width: 600px;
+  margin-left: 250px; }
+
+#procedures .listing-btn:hover {
+  background-color: gray;
+  border: none; }

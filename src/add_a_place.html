@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placedrop-add-a-place</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <!--  navbar -->
+    <nav class="navbar navbar-expand-md shadow-sm">
+                
+        <a href="index.html" class="navbar-brand" style="color: black;">PLACE DROP</a>
+        <input type="text" class=" nav-input" placeholder="   What are you looking for?"><i class="fa fa-search"></i>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+                  
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-3">
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle " type="button" data-toggle="dropdown" style="color:black">
+                            #Discover
+                        </button>
+
+                        <div class="dropdown-menu dropdownstyle mt-2">
+                            <a href="#" class="dropdown-item">All listings</a>
+                            <a href="#" class="dropdown-item">Food</a>
+                            <a href="#" class="dropdown-item">Entertainment</a>
+                            <a href="#" class="dropdown-item">lodgin</a>
+                            <a href="#" class="dropdown-item">Nightlife</a>
+                            <a href="#" class="dropdown-item">Outdoors</a>
+                            <a href="#" class="dropdown-item">Shops</a>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </li>
+                <li class="nav-item mr-3">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle dropdown-new" type="button" data-toggle="dropdown" style="color:black;">
+                            Help
+                        </button>
+                        <div class="dropdown-menu dropdownstyle mt-2">  
+                            <a href="how_it_works.html" class="dropdown-item">How it works</a>
+                             
+                            <a href="#" class="dropdown-item">Listings-No Map</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item mr-3 btn ">
+                    <a href="#" class="nav-link btn add-btn pl-4 pr-4">Add a Place <span><i class="fa fa-caret-right"></i></span> </a>
+                </li>
+                   
+                <li class="nav-item ">
+                
+                    <button type="button" class="btn" style="color:black;" data-toggle="modal" data-target="#login" ">Log In</button>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <hr>
+    
+    
+</nav>
+
+<!-- add place form-->
+<section id="addplace" class="bg-light">
+    <div class="container">
+        <div style="height: 100px;"></div>
+       <h1 class="display-4 text-center">Add your Place</h1> 
+       <p class="lead text-center">Get exposed and discovered, time for your Place of business to shine</p>
+        <div style="height: 100px;"></div>
+    </div>
+    <div class="container" style="background-color: #fff; border-radius: 5px; max-width:800px;">
+        <form action="">
+            <div class="card " style="max-width:700px;margin-left: 30px;">
+            
+                <div class="container p-5">
+                    <h1 class="lead">Have an account?</h1>
+                    <hr>
+                    <p><a href="#" class="text-danger">Sign in </a> If you don’t have an account you can create one below by entering your email address/username. Your account details will be confirmed via email.
+                    </p>
+                    <input type="text" class="form-control" placeholder="your @domain" style="height: 50px;">
+    
+                </div>
+                
+    
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="" class="font-weight-bold">Password</label>
+              <input type="text" class="form-control" style="height: 50px;">
+    
+            </div>
+            <div class=" form-group pt-4">
+                <label for="verify password" class="font-weight-bold">Verify Password</label>
+                <input type="text" class="form-control" style="height: 50px;">
+                
+            </div>
+            <div class="form-group pt-4">
+                <label for="listing name" class="font-weight-bold"> Listing Name</label>
+                <input type="text" class="form-control" style="height: 50px;" placeholder="your Listing name">
+               </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Tagline</label>
+                <input type="text" class="form-control" style="height: 50px;" placeholder="e.g Specialty coffee shop">
+    
+            
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Description</label>
+                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+    
+            
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Listing Category</label>
+                <select name="caregory" id="choose-category" class="form-control" style="height: 50px;">
+                    <option value="">Art & Intertainment</option>
+                    <option value="">Art Gallery</option>
+                    <option value="">Gym</option>
+                </select>
+    
+            
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Listing Tags <span class="text-muted">(optional)</span></label>
+                <select name="caregory" id="choose-category" class="form-control" style="height: 50px;">
+                    <option value="">Bath tab</option>
+                    <option value="">Door man</option>
+                    <option value="">Elevator</option>
+                </select>
+                <p class="text-muted">Visitors can filter their search by the amenities too, so make sure you include all the relevant ones.</p>
+    
+            
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Location <span class="text-muted">(optional)</span></label>
+                <input type="text" class="form-control" style="height: 50px; " placeholder="e.g 34 Wigmore street, London">
+                <p class="text-muted">Leave this if the location is not important</p>
+    
+            
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Gallery Images <span class="text-muted">(optional)</span></label>
+                <input type="file" class="form-control-file">
+                <p class="text-muted">Leave this if the location is not important</p>
+    
+            
+            </div>
+    
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Hours of operation <span class="text-muted">(optional)</span></label>
+                <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Mon-Fri: 09:00-23:00&#13;&#10;sat-sun: 17:00-23:00"></textarea>
+    
+            
+            </div>
+    
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Phone<span class="text-muted">(optional)</span></label>
+                <input type="text" class="form-control" style="height: 50px; " placeholder="+255 768 814 799">
+                
+            </div>
+    
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Website<span class="text-muted">(optional)</span></label>
+                <input type="text" class="form-control" style="height: 50px; " placeholder="e.g yourwebsite.com, London">
+                
+            </div>
+            <div class="form-group pt-4">
+                <label for="tagline" class="font-weight-bold">Twiter Username<span class="text-muted">(optional)</span></label>
+                <input type="text" class="form-control" style="height: 50px; " placeholder="@yourcompany">
+                
+            </div>
+            
+            <div class="form-group pt-4">
+                <button class="btn btn-danger btn-block">Preview</button>
+            </div>
+            <div class="form-group pb-4">
+                <button class="btn btn-outline-dark btn-block"style="height: 50px;"">Save Draft</button>
+            </div>
+
+        </form> 
+
+    </div>
+    
+</section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="bg-black">
+            <div class="p-2"></div>
+            <div class="container d-flex justify-content-center">      
+                <i class="fa fa-facebook-f footer-fa "></i>
+                <i class="fa fa-share-alt footer-fa"></i>
+                <i class="fa fa-twitter footer-fa"></i>
+                <i class="fa fa-youtube footer-fa"></i>
+                <i class="fa fa-pinterest-p footer-fa"></i>
+                <i class="fa fa-instagram footer-fa"></i>
+            </div>
+            <div class="p-2"></div>
+
+        </div>
+        <div class="p-5">
+
+        </div>
+        <div class="p-5">
+
+        </div>
+
+    </footer>
+
+    <!-- login modal -->
+   
+
+
+<div class="modal fade"  id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 400px;" role="document">
+        <div class="container-fluid">
+          <div class="modal-content">
+              <div class="container mt-4">
+                <i class="fa fa-facebook-square modal-fa ml-5" style="color:#264b96;"></i>
+                <i class="fa fa-google modal-fa" style="color: #188f18;"></i>
+                <hr class="" style="max-width: 300px;">
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group ">
+                    <label for="Username" class="col-form-label ml-3">Username or Email Address</label>
+                    <input type="text" class="form-control ml-3" id="username" style="max-width: 300px; height: 60px;">
+                  </div>
+                  <div class="form-group ">
+                    <label for="password" class="col-form-label ml-3">Password</label>
+                    <input type="password" class="form-control ml-3" id="password" style="max-width: 300px; height: 60px;">
+                    
+                  </div>
+                  
+                </form>
+              </div>
+              <div class="container">
+                
+                <button type="button" class="btn btn-danger btn-lg p-3 ml-3" style="min-width: 300px;">Login <i class="fa fa-caret-right"></i></button>
+                 
+                <hr style="max-width: 300px;">
+                  <p class="text-center"> dont have an account?<a href="#" class="text-danger">Sign Up</a></p>
+                 
+              </div>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+
+
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
